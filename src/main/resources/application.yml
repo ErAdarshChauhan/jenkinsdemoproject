@@ -1,0 +1,21 @@
+server:
+   port: 2022
+
+logging:
+   level:
+     org:
+       springframework:
+         data: debug
+
+spring:
+  profiles:
+    active: ${PROFILE_ACTIVE}
+
+#application:
+#  cors:
+#    allowed-origins: "http://localhost:4200,https://pqms-dev.inadev.net"
+#    allowed-methods: "*"
+#    allowed-headers: "*"
+#    exposed-headers: "Authorization,Link,PQ-X-Total-Count,PQ-X-error,PQ-X-alert,PQ-X-params"
+#    allow-credentials: true
+#    max-age: 1800
