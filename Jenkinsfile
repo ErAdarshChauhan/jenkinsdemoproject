@@ -4,12 +4,12 @@ pipeline {
         stage('Compile and Clean') { 
             steps {
 
-                sh "mvn clean compile"
+                sh "clean compile"
             }
         }
         stage('Test') { 
             steps {
-                sh "mvn test site"
+                sh "test site"
             }
             
              post {
@@ -21,7 +21,7 @@ pipeline {
 
         stage('deploy') { 
             steps {
-                sh "mvn package"
+                sh "package"
             }
         }
         
